@@ -1,5 +1,5 @@
-title: Architect theme
-description: Architect is a theme for GitHub Pages.
-show_downloads: true
+title: Shashwat Kashyap
+description:
+show_downloads: false
 google_analytics:
-theme: 
+theme: jekyll-theme-architect
