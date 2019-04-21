@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');	
+
+body{
+	font-family: 'Raleway', sans-serif;
+	font-size: 110%;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+div.header{
+	min-height: 100vh;
+}
+
+/*div.header:nth-child(even){
+	background-color: #a4c1bd;
+}
+div.header:nth-child(odd){
+	background-color: #d7dfed;
+}*/
+
+.empty-container{
+	height: 14vh;
+}
+
+.section-title{
+	text-align: center;
+	letter-spacing: 2px;
+	font-weight: bolder;
+}
+
+a:hover{
+	text-decoration: none;
+	color: white;
+}
+
+/* ====================
+	  NAVIGATION BAR
+   ==================== */
+
+.navbar-custom{
+	background-image: linear-gradient(black, #6b6868); 
+}
+
+.navbar-brand{
+	font-size: 30px;
+}
+
+
+/* ==================== 
+		  HOME
+   ==================== */
+
+#home{
+	margin-bottom: -150px;
+}
+
+.profile-image{
+	height: 50vh;
+	width: 50vh;
+	border-radius: 50%;
+	-webkit-box-shadow: 0px 0px 20px -2px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 20px -2px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 20px -2px rgba(0,0,0,0.75);
+}
+
+.name{
+	font-size: 50px;
+	text-align: center;
+	letter-spacing: 2px;
+	font-weight: bolder;
+	color: #202021;
+}
+
+.designation{
+	font-size: 25px;
+	text-align: center;
+	letter-spacing: 4px;
+	font-weight: lighter;
+	color: #6a6b6d;
+}
+
+@media screen and (max-width: 768px){
+	#home{
+		margin-bottom: 0px;
+	}
+}
+
+/* ==================== 
+		ABOUT		  
+   ==================== */
+
+.about-description{
+	font-size: 1.6em;
+	padding: 5vh;
+	text-align:center;
+	letter-spacing: 1.5px;
+}
+
+.resume{
+	padding: 20px 50px 20px 50px;
+	border-radius: 20px;
+	background-image: linear-gradient(#24a0f2, #30b9db);
+	color: black;
+	font-size: 25px;
+	letter-spacing: 1.5px;	
+	-webkit-box-shadow: 2px 3px 8px -2px rgba(133,124,133,0.75);
+	-moz-box-shadow: 2px 3px 8px -2px rgba(133,124,133,0.75);
+	box-shadow: 2px 3px 8px -2px rgba(133,124,133,0.75);
+	display: block;
+	margin: auto;
+}
+
+/* ==================== 
+		EXPERIENCE
+   ==================== */
+
+#experience{
+	background-color: black; 
+}
+
+p{
+	margin: 0;
+}
+.company-logo{
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+}
+
+.company-title{
+	font-size: 25px;
+	font-weight: bolder;
+	color: white;
+}
+
+.company-designation{
+	font-size: 20px;
+	font-weight: bolder;
+	color: #37bdf2;
+}
+
+.work-duration{
+	font-size: 20px;
+	color: #6b6868;
+}
+
+.work-detail{
+	font-size: 18px;
+	color: #d2dce0;
+}
+
+/* ==================== 
+         SKILLS
+   ==================== */
+
+.charts-container {
+    font-size: 9em;
+}
+
+.charts-container:after {
+
+}
+
+.skill-wrapper {
+    height: 1em;
+    width: 1em;
+    position: relative;
+}
+
+.skill-wrapper .skill-circle {
+    height: 100%;
+    clip: rect(auto, auto, auto, auto);
+    width: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+
+.skill-wrapper .skill-circle .half-circle {
+    height: 100%;
+    width: 100%;
+    border: 0.1em solid #30b9db;
+    /* #bbf221 */
+    border-radius: 50%;
+    clip: rect(0, 0.5em, 1em, 0);
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+
+.skill-wrapper .label {
+    font-size: 0.15em;
+    left: 0.4em;
+    position: absolute;
+    right: 0.4em;
+    text-align: center;
+    top: 1.8em;
+    font-weight: bold;
+}
+
+.skill-wrapper .shadow {
+    height: 100%;
+    width: 100%;
+    border: 0.1em solid #bdc3c7;
+    border-radius: 50%;
+}
+
+.skill-wrapper .skill-circle .left-side {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+/* ==================== 
+		  PROJECTS
+   ==================== */
+
+.card{
+	border-radius: 10px;
+	background-image: linear-gradient(black, #6b6868); 
+	-webkit-box-shadow: 3px 3px 16px -6px rgba(0,0,0,0.75);
+	-moz-box-shadow: 3px 3px 16px -6px rgba(0,0,0,0.75);
+	box-shadow: 3px 3px 16px -6px rgba(0,0,0,0.75);
+	transition: all 0.1s ease-in-out;
+}
+
+.card:hover{
+	transform: scale(1.05, 1.05);
+	-webkit-box-shadow: 3px 3px 27px -6px rgba(0,0,0,0.75);
+	-moz-box-shadow: 3px 3px 27px -6px rgba(0,0,0,0.75);
+	box-shadow: 3px 3px 27px -6px rgba(0,0,0,0.75);
+} 
+
+.card-title{
+	text-align: center;
+	font-size: 30px;
+	font-weight: bolder;
+	color: #30b9db	;
+	
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.modal-dialog {
+    position: absolute;
+    margin: 0;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;	
+    padding: 0;   
+}
+
+.modal-content {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    border-radius: 20px;
+    box-shadow: none;
+    overflow-y: auto;
+}
+
+.modal-header{
+	background-color: #d4d8dd;
+}
+
+.modal-footer{
+	background-color: #d4d8dd;
+}
+
+/* =================== 
+	    FOOTER
+   =================== */
+
+#footer{
+	height: 40vh;
+	background-color: #3a3a3a;
+}
+
+.social-links{
+	font-size: 200%;
+}
+
+.move {
+    transition: all 0.1s ease-in-out;
+}
+
+.move:hover {
+    transform: scale(1.15, 1.15);
+}
